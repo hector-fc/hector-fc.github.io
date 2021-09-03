@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+}
+
+
+//table{
+//    border: flat;
+//    padding: 20px;
+//    border-spacing:30 px;
+//}
+
+
+td{
+    border: none;  
+}
+
+
+a{
+    text-decoration: none;
+    color:#181818;
+    cursor:pointer;
+}
+
+
+a:visited{
+    text-decoration: none;
+}
+
+a:link{
+    text-decoration:none;
+}
+
+
+p{
+    line-height:20px;
+    margin-bottom:20px;
+}
+
+  
+

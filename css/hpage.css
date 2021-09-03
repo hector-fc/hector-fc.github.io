@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;    
+}
+
+
+/* layout 1 */
+.layout1 .title{
+    width:100%;
+    background-color:#3A5A8F;
+}
+
+
+.layout1 .menu{
+    width:15%;
+    float:left;
+}
+
+.layout1 .content{
+    width:85%;
+    float:right;
+}
+
+
+.layout1 .menu table{
+    border: flat;
+    padding: 10px;
+    border-spacing:30 px;
+    border-collapse: separate;
+}
+
+
+td {
+    border: none;  
+}
+
+
+a{
+    text-decoration: none;
+    color:#181818;
+    cursor:pointer;
+}
+
+
+a:visited{
+    text-decoration: none;
+}
+
+a:link{
+    text-decoration:none;
+} 
+

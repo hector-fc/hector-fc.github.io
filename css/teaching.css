@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    padding: 30px;
+}
+
+table{
+    border: flat;
+    padding: 20px;
+    border-spacing:30px;
+    border-collapse: separate;    
+}
+
+
+td {
+    border: none;  
+}
+
+
+a{
+    text-decoration: none;
+    color:#3A4F8F;
+    cursor:pointer;
+}
+
+
+a:visited{
+    text-decoration: none;
+}
+
+a:link{
+    text-decoration:none;
+} 
+
