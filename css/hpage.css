@@ -15,6 +15,9 @@ body{
     background-color:#3A5A8F;
 }
 
+.footer .footerF{
+    background-color:#3A5A8F;
+}
 
 .layout1 .menu{
     width:15%;
@@ -24,6 +27,7 @@ body{
 .layout1 .content{
     width:85%;
     float:right;
+    background-color:#ffffff 
 }
 
 
@@ -33,7 +37,6 @@ body{
     border-spacing:30 px;
     border-collapse: separate;
 }
-
 
 td {
     border: none;  

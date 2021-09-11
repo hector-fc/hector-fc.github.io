@@ -1,6 +1,5 @@
 <html>
   <head>
-
     <style>
       
       a{
@@ -11,7 +10,6 @@
     </style>
 
   </head>
-
   
 <body>  
   <table align="center" width="90%" border="0">
@@ -24,7 +22,7 @@
       <td align="right">
 	<font size="+3" color="white">
 	  <b>
-	    <a href="https://www.ufmt.br/ufmt/site" target="_black"> UFMT </a>
+	    <a href="ufmt.br" target="title_t"> UFMT </a>
 	  </b>
 	</font>
       </td>
