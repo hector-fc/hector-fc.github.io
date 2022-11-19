@@ -194,8 +194,10 @@ header  a {
 /* === Home ==== */
 
 #home {
-  background-color:#D6DBDF;
-  /*background-image: url('../assets/bg.gif');*/
+  background-color:#d6dbe5;
+  
+  /*background-image: url('../assets/bg.gif');
+  background-color:#D6DBDF;*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -255,12 +257,26 @@ header  a {
 }
 
 #research .research-container {
-  display: grid;
+  margin-top: 1cm;
+  text-align: left;
+  /*display: grid;  
   grid-template-columns: 250px 550px;
-  column-gap: 32px;
+  column-gap: 32px;  
   justify-content: left;
-  align-items: left;
+  */
+  align-items: left;  
+  display: block;
+  width: 80%;
 }
+
+#research .research-container .research-image img {
+  width: 220px;
+  height: 220px;
+  border-radius: var(--border-radius-mini);
+  box-shadow: 2px 1px 4px 2px var(--dark-color);
+  object-fit: cover;
+}
+
 
 @media (max-width: 600px) {
   #research .research-container {
