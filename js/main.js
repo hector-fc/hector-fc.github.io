@@ -13,3 +13,10 @@ function toTop() {
   document.documentElement.scrollTop = 0;
   document.body.scrollTop = 0; /* to Safari */
 }
+
+let menu=document.querySelector('#menu');
+let menu_bar=document.querySelector('#menu-bar');
+menu_bar.addEventListener('click',function(){
+menu.classList.toggle('menu-toggle')
+})
+

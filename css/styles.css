@@ -157,7 +157,11 @@ header {
 .logo{
   cursor: pointer;
   margin-left: auto;    
-  height: 20px;
+  height: 27px;
+}
+
+.menu-bar {
+  display: none;
 }
 
 /* ==== Nav Bar ==== */
@@ -190,6 +194,46 @@ header  a {
   /*color: var(--p-color);*/
   color: var(--gray-color)
 }
+
+@media only screen and (max-width: 800px){
+  nav {  
+  position: relative;
+  }    
+
+  .logo{
+    display: none;
+  }
+
+  .ufmt {
+    display: none;
+  }
+
+  .menu-bar{
+    display:grid;
+    font-size: 2em;
+    cursor: pointer;
+  }
+
+  nav ul {
+    position: absolute;
+    width: 30%;
+    height: 35vh;
+    display: grid;
+    align-items: center;
+    background-color: var(--menu-bg-color);
+    margin-top: 18em;
+    transform: translateY(-120%);
+    transition: all 0.5s;
+  }
+
+  nav .menu-toggle {
+    transform: translateY(0%);
+  }
+
+}
+
+
+
 
 /* === Home ==== */
 
