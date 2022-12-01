@@ -197,7 +197,7 @@ header  a {
 
 @media only screen and (max-width: 800px){
   nav {  
-  position: relative;
+  position: grid;
   }    
 
   .logo{
@@ -217,12 +217,12 @@ header  a {
   nav ul {
     position: absolute;
     width: 30%;
-    height: 35vh;
+    height: auto;
     display: grid;
     align-items: center;
     background-color: var(--menu-bg-color);
     margin-top: 18em;
-    transform: translateY(-120%);
+    transform: translateX(-120%);
     transition: all 0.5s;
   }
 
