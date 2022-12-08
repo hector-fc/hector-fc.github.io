@@ -196,7 +196,13 @@ header  a {
 }
 
 @media only screen and (max-width: 800px){
+  header{
+    background: var(--primary-color);
+    position: fixed;
+  } 
+
   nav {  
+  background: var(--primary-color);  
   position: grid;
   }    
 
@@ -208,7 +214,7 @@ header  a {
     display: none;
   }
 
-  .menu-bar{
+  .menu-bar{    
     display:grid;
     font-size: 2em;
     cursor: pointer;
@@ -220,7 +226,8 @@ header  a {
     height: auto;
     display: grid;
     align-items: center;
-    background-color: var(--menu-bg-color);
+    /*background-color: var(--menu-bg-color);*/
+    background: var(--primary-color);  
     margin-top: 18em;
     transform: translateX(-120%);
     transition: all 0.5s;
