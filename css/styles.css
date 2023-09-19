@@ -355,38 +355,6 @@ header  a {
 
 /* ==== Publication  ==== */
 
-/* Style for the list container */
-.custom-list {
-  list-style-type: none;
-  padding:10;
-  margin: 10px;
-  /*
-  font-family: Arial, Helvetica, sans-serif;
-  */
-}
-
-/* Style for list items */
-.custom-list li {
-  font-size: var(--p-font-size);
-  font-weight: var(--font-weight-light);
-  line-height: 28px;
-  letter-spacing: 0.3px;  
-  text-align: justify;
-  text-justify: inter-word;    
-  margin: 10px 0;
-  padding: 10px;
-  background-color: #f2f2f2;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s;
-}
-
-/* Hover effect for list items */
-.custom-list li:hover {
-  background-color: #e0e0e0;
-}
-
-
 #publication h5 {
   text-align: center;
   margin-bottom: 32px;
@@ -395,22 +363,44 @@ header  a {
 }
 
 #publication .publication-container {
-  display: grid;  
-  /*column-gap: 32px;*/
-  grid-template-columns: 950px;
-  justify-content: center;
-  align-items: center;
+  margin-top: 1cm;
+  text-align: left;
+  align-items: left;  
+  display: block;
+  width: 80%;
 }
 
-@media (max-width: 900px) {
+#publication .publication-container .list ul li{  
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);  
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-light);
+  line-height: 28px;
+  letter-spacing: 0.3px;  
+  text-align: justify;
+  text-justify: inter-word;
+} 
+
+#publication .publication-container .list ul li:hover {
+  background-color: #e0e0e0;
+}
+
+@media (max-width: 600px) {
   #publication .publication-container {
     display: block;
     width: 90%;
   }
+
+  #publication .publication-container .list {
+    text-align: left;
+    margin-bottom: 16px;
+  }
 }
 
-
-/* ==== Teaching  ==== */
+/* ==== Blog ==== */
 
 #blog h5 {
   text-align: left;
@@ -419,26 +409,51 @@ header  a {
   color: var(--primary-color);
 }
 
-#blog .blog-container {
+#blog .blog-container{
+  margin-top: 1cm;
+  text-align: left;
+  align-items: left;  
+  display: block;
+  width: 80%;
+  /*
   display: grid;  
   column-gap: 32px;
   grid-template-columns: 950px;
   justify-content: left;
   align-items: left;
+  */
+}
+       
+#blog .blog-container .list ul li{  
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);  
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-light);
+  line-height: 28px;
+  letter-spacing: 0.3px;  
+  text-align: justify;
+  text-justify: inter-word;
+} 
+
+#blog .blog-container .list ul li:hover {
+  background-color: #e0e0e0;
 }
 
-#blog ul{
-  color: var(--primary-color);  
-  font-size: 45px;
-}
-
-
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   #blog .blog-container {
     display: block;
     width: 90%;
   }
+
+  #blog .blog-container .list{
+    text-align: left;
+    margin-bottom: 16px;
+  }
 }
+
 
 
 /* ==== Books ==== */
