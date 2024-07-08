@@ -171,6 +171,24 @@ section {
 }
 
 
+.main-content {
+  margin-left: 250px; /* Adjust based on sidebar width */
+  padding: 20px;
+}
+
+
+/* Media query for cell phones */
+@media only screen and (max-width: 768px) {
+  .sidebar {
+      display: none; /* Hide the sidebar */
+  }
+  
+  .main-content {
+      margin-left: 0; /* Adjust margin to center content */
+  }
+}
+
+
 /*=== home====*/
 #home {  
   min-height:100vh;  
@@ -291,6 +309,18 @@ border-radius: 0.1cm;
     letter-spacing: 0.3px;  
     text-align: justify;
     text-justify: inter-word;    
+}
+
+@media (max-width: 600px) {
+  #mzero .lista {
+    display: block;
+    width: 90%;
+  }
+
+  #mzero .lista  {
+    text-align: left;
+    margin-bottom: 16px;
+  }
 }
 
 
