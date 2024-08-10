@@ -433,7 +433,7 @@ header  a {
   padding: 10px;
   background-color: #f2f2f2;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);  
+  /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);  */
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-light);
   line-height: 28px;
@@ -443,7 +443,7 @@ header  a {
 } 
 
 #blog .blog-container .list ul li:hover {
-  background-color: #e0e0e0;
+  background-color: #f2f2f2;
 }
 
 @media (max-width: 600px) {
