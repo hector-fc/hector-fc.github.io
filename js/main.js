@@ -1,22 +1,25 @@
-const btn = document.getElementById('to-top-btn');
-
-window.onscroll = function () {
-  if (document.documentElement.scrollTop > 20 ||
-    document.body.scrollTop > 20) {
+// Back to top logic as before
+const btn = document.getElementById('to-top');
+window.onscroll = function() {
+  if(document.documentElement.scrollTop > 200) {
     btn.style.display = "block";
   } else {
     btn.style.display = "none";
   }
-}
+};
+btn.onclick = () => window.scrollTo({top: 0, behavior: 'smooth'});
 
-function toTop() {
-  document.documentElement.scrollTop = 0;
-  document.body.scrollTop = 0; /* to Safari */
-}
+// Hamburger menu logic
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.getElementById('nav-links');
 
-let menu=document.querySelector('#menu');
-let menu_bar=document.querySelector('#menu-bar');
-menu_bar.addEventListener('click',function(){
-menu.classList.toggle('menu-toggle')
-})
+menuToggle.addEventListener('click', function() {
+  navLinks.classList.toggle('show');
+});
 
+// Optionally close menu when a link is clicked (for better UX)
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('show');
+  });
+});

@@ -1,73 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hector's home page</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" 
-    crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600&family=Rubik:wght@300;400;600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css">
+  <title>Home's Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="/css/styles.css">
+
+
 </head>
 
 <body>
-  <header>    
-    <nav>
-      <img class="logo" src="assets/parabola03.png" atl="hector-fc">
-      <ul id="menu">
-        <li><a href="index.html"> Home </a></li>
-        <li><a href="reasearch.html"> Research </a></li>
-        <li><a href="publication.html"> Publication </a></li>
-        <li><a href="books.html"> Books </a></li>
-        <li><a href="blog.html"> Blog </a></li>
-        <li><a href="contacts.html"> Contact </a></li>
+  <aside>
+    <img src="assets/HectorFC.png" alt="Profile Picture" class="profile-img">
+    
+     <!-- Email contact <h1>Héctor F. C.</h1>-->
+    <div class="author-links">
+      <ul>
+      <!-- E-mail -->
+      <li class="author-email">
+        <a href="mailto:hector.callisaya@ufmt.br" 
+          aria-label="Send email to Hector Callisaya" 
+          itemprop="email">
+          <i class="fa fa-envelope-square" aria-hidden="true"></i> 
+           Email
+        </a>
+      </li>
+
+      <!-- GitHub -->
+      <li class="author-github">
+        <a href="https://github.com/hector-fc" 
+        target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github" ></i>  GitHub
+        </a>
+      </li>
+
+      <!-- researchgate -->
+      <li class="author-rgate">
+        <a href="https://www.researchgate.net/profile/Hector-Callisaya" 
+        target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-researchgate"></i>  ResearchGate
+        </a>
+      </li>
+        <!-- orcid -->
+      <li class="author-rgate">
+        <a href="https://orcid.org/0000-0002-9303-9240" target="_blank" rel="noopener noreferrer"></a>
+        <i class="fa-brands fa-orcid"></i>  ORCID
+        </a>
+      </li>
+
+
       </ul>
-      <div class="menu-bar" id="menu-bar">        
-        <i class="fas fa-bars"> </i>                
-      </div>
-      <div class="ufmt">
-        <a href="https://ufmt.br/unidade/dmat">UFMT</a> 
-      </div>      
-    </nav>    
-  </header>
-
-
-  <main>
-  <section id="home">    
-    <div class="home-container">
-    <div class="home-image">
-      <img src="./assets/HectorFC.png" alt="Hector FC" />      
-    </div>    
-    <div>   
-      <strong><h3> Hector Flores Callisaya<h3></h3> </strong> 
-      <h5>
-      <p>
-      Graduate in Mathematics, University Mayor de San Andres, La Paz - Bolivia.
-      </p>
-      <p>            
-      MSc. University Federal of Fluminense, Rio de Janeiro - Brasil.
-      </p>
-      <p>            
-      Phd. University of Campinas, Sao Paulo - Brazil.
-      </p>
-      <p>               
-      Professor at the University of Mato Grosso, Mato Grosso - Brasil.      
-      <p>
-      </h5>
-      </div>                
     </div>
-  </section>
+    
+  </aside>
 
-  </main>
 
-  <button onclick="toTop()" id="to-top-btn"><i class="fas fa-arrow-up"></i></button>
+  <div class="content-wrap">   
+
+    <nav class="top-nav">      
+      <div class="nav-content">        
+        <span class="nav-title">Héctor Flores Callisaya</span>        
+
+      
+        <button id="menu-toggle" aria-label="Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        
+        <ul id="nav-links">
+          <li><a href="#project">Project</a></li>
+          <li><a href="#talks">Talks</a></li>
+          <li><a href="#publication">Publication</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  
+    <main>
+
+     <section id="welcome">
+      <h2>Welcome</h2>
+      <p> 
+        I am a Research Scientist with extensive experience in linear and nonlinear optimization, 
+        bolstered by a strong background in university teaching and academic research.
+      </p>
+
+      <p>My professional goals include:</p>
+      <ul>
+        <li>Developing specialized optimization algorithms for problems such as cutting and packing.</li>
+        <li>Architecting distributed computing systems for large-scale optimization.</li>
+        <li>Advancing the field through innovative mathematical modeling and pedagogy.</li>
+      </ul>
+      </section>
+
+  
+      <section id="about">      
+        <h2>Education & Professional Experience</h2>
+        
+        <div class="education-entry">
+          <h3>Academic Background</h3>
+          <ul>
+            <li><strong>Ph.D. in Applied Mathematics</strong>, University of Campinas (UNICAMP), Brazil</li>
+            <li><strong>M.Sc. in Mathematics</strong>, Federal Fluminense University (UFF), Brazil</li>
+            <li><strong>B.Sc. in Mathematics</strong>, Higher University of San Andrés (UMSA), Bolivia</li>
+          </ul>
+        </div>
+
+        <div class="experience-entry">
+          <h3>Current Position</h3>
+          <p><strong>Professor</strong> at the Federal University of Mato Grosso (UFMT), Brazil</p>
+        </div>
+      </section>
+
+    
+
+    <section id="awards">
+      <h2>Awards</h2>
+      <ul>
+        <li>2001: Sobolmat</li>        
+        <!-- Add more awards as needed -->
+      </ul>
+    </section>
+    </main>
+  </div>
+
+  <button id="to-top" title="Back to top">↑</button>
   <script src="js/main.js"></script>
 </body>
-
 </html>
